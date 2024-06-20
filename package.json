@@ -21,7 +21,7 @@
         }
     },
     "files": [
-        "dist"
+        "src"
     ],
     "devDependencies": {
         "@sveltejs/adapter-auto": "^3.0.0",
