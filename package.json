@@ -13,6 +13,7 @@
         "format": "prettier --write ."
     },
     "main": "dist/index.js",
+    "module": "dist/index.js",
     "exports": {
         ".": {
             "types": "./dist/index.d.ts",
