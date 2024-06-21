@@ -1,10 +1,10 @@
 <script lang="ts">
     import type { Snippet } from 'svelte';
 
-    let { children, content } = $props<{
+    let { children, content }: {
         children?: Snippet;
         content?: string;
-    }>();
+    } = $props();
 </script>
 
 {#if content}

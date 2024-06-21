@@ -1,4 +1,8 @@
-<script lang="ts">let { size, children, ...props } = $props();
+<script lang="ts">let {
+  size,
+  children,
+  ...props
+} = $props();
 </script>
 
 {#if size === '1' || size === 1}

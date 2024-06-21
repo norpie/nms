@@ -70,7 +70,7 @@
         </li>
     </ul>
 
-    <H size="2">Components</H>
+    <H size="2" class="test">Components</H>
     <div class="indent">
         <H size="3">Text Components</H>
         <div class="indent">

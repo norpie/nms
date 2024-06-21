@@ -2,11 +2,14 @@
     import type { Snippet } from 'svelte';
     import type { HTMLAttributes } from 'svelte/elements';
 
-    let { size, children, ...props } = $props<{
+    let {
+        size,
+        children,
+        ...props
+    }: {
         size: string | number;
         children: Snippet;
-        props?: HTMLAttributes<HTMLHeadingElement>;
-    }>();
+    } & HTMLAttributes<HTMLHeadingElement> = $props();
 </script>
 
 {#if size === '1' || size === 1}

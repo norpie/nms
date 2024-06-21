@@ -1,23 +1,18 @@
 <script lang="ts">
     import type { Snippet } from 'svelte';
-    import type { HTMLButtonAttributes } from 'svelte/elements';
+    import type { HTMLAttributes } from 'svelte/elements';
     let {
         text = '',
         pill = false,
         disabled = false,
         children,
         ...props
-    } = $props<{
+    }: {
         text?: string;
         pill?: boolean;
         disabled?: boolean;
         children?: Snippet;
-        props?: Props;
-    }>();
-
-    interface Props extends HTMLButtonAttributes {
-        children: Snippet;
-    }
+    } & HTMLAttributes<HTMLButtonElement> = $props();
 </script>
 
 <button class:pill {disabled} {...props}>
