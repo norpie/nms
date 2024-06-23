@@ -2,11 +2,11 @@
     import type { Snippet } from 'svelte';
     import type { HTMLAttributes } from 'svelte/elements';
 
-    let { children, href, ...props } = $props<{
+    let { children, href, ...props }: {
         href: string;
         children: Snippet;
         props?: HTMLAttributes<HTMLLinkElement>;
-    }>();
+    } = $props();
 </script>
 
 <a {href} {...props}>{@render children()}</a>
